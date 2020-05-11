@@ -1,2 +1,6 @@
 <h2>Checking if answer works</h2>
-<p><%= @question %></p>
+<p>ME: <%= @question %></p>
+<p>Coach: <%= @answer %></p>
+<form action="/ask" method="get">
+  <input type="submit" value="Go back to menu!">
+</form>
