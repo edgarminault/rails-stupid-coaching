@@ -1,4 +1,8 @@
 <form action="/answer" method="get">
-  <input type="text" name="question">
+  <input type="text"
+  name="question"
+  value='<%= params[:question] %>'
+  placeholder="Question">
   <input type="submit" value="Ask!">
 </form>
+
