@@ -1,6 +1,16 @@
-<h2>Checking if answer works</h2>
-<p>ME: <%= @question %></p>
-<p>Coach: <%= @answer %></p>
-<form action="/ask" method="get">
-  <input type="submit" value="Go back to menu!">
-</form>
+<div class="card-product">
+  <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
+  <div class="card-product-infos">
+    <p><%= @question %></p>
+    <p>- You</p>
+  </div>
+</div>
+<div class="card-product">
+  <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
+  <div class="card-product-infos">
+    <p><%= @answer %></p>
+    <p>- Coach</p>
+  </div>
+</div>
+
+<%= link_to "Ask another question", "/ask", class: "btn btn-ghost" %>
